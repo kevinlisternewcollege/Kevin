@@ -1,9 +1,6 @@
 from bs4 import BeautifulSoup  # this is called from BeautifulSoup4
 import requests
 
-team_points = []
-team_name =[]
-
 # prior to running the programme you need to install the package lxml
 
 html_text_of_page = requests.get("https://www.premierleague.com/tables?co=1&se=418&ha=-1",verify=False).text
@@ -32,10 +29,14 @@ for points in tags3:
     #if len(points_string) ==
     #print(len(points_string))
     if len(points_string)==26:
-        actual_points =points_string[19:21]
         print(points_string[19:21])
     else:
-        actual_points = points_string[19:20]
+        print(points_string[19:20])
+
+    #print ("stripped data = ",stripped_data)
+
+for teams in tags4:
+    print(teams)
         print(points_string[19:20])
 
     team_points.append(actual_points)

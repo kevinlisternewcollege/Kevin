@@ -1,4 +1,4 @@
-#in order transverse of tree
+#post order transverse of tree
 output =[] # we set this list to collect the data from the tree
 
 def postorderTraverse (p):

@@ -31,7 +31,8 @@ data = []
 
 constant_in = input ("constant, between 0 and 4 = ")
 start_value = input ("Start value between 0 and 1  = ")
-value = logistic(0.9,float(constant_in))
+data.append(float(start_value)
+value = logistic(float(start_value),float(constant_in))
 plt.plot(data, color=("red"))
 plt.title(f"Constant =  {constant_in}, Starting value = {start_value}")
 if data[-1] <= 0:
